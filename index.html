@@ -1,2 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Speed Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/logo.jpeg" alt="logo">
+      <h1>Typing Speed Game</h1>
+    </div>
+    <div class="list">
+      <h2>Score : <span id="score">0</span></h2>
+      <h2>Chrono : <span id="timer">60</span>s</h2>
+    </div>
+  </header>
+
+  <main>
+    <section class="typing-container">
+      <div id="textToType"></div>
+
+      <!-- Barre de frappe colorée -->
+      <div class="input-wrapper">
+        <div id="highlightedText"></div>
+        <textarea id="inputText" placeholder="Commence à taper ici..." autofocus></textarea>
+      </div>
+
+      <button id="startBtn">Démarrer</button>
+
+      <div id="results" class="hidden">
+        <h2>Résultats :</h2>
+        <p>Mots par minute : <span id="wpm"></span></p>
+        <p>Précision : <span id="accuracy"></span>%</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
 
